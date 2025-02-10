@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: csb-server-api
+  description: |-
+    csb-server api spec
+  version: 'v1'
+servers:
+  - url: "http://localhost:8080"
+  - url: "https://microcks-microcks.apps.developer-hub.fuse.integration-qe.com/rest/csb-server-api/v1"
+paths: {}

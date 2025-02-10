@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "csb-server-api"
+  title: "csb-server-api"
+  description: "csb-server api spec"
+  annotations:
+    backstage.io/spectral-ruleset-url: https://raw.githubusercontent.com/contract-first-idp/spectral-rules/main/ruleset.yaml
+  links:
+    - url: https://registry-apicurio-registry.apps.developer-hub.fuse.integration-qe.com/ui/artifacts/com.redhat/csb-server-api/versions/latest
+      title: Apicurio Registry
+      icon: web
+    - url: https://microcks-microcks.apps.developer-hub.fuse.integration-qe.com/#/services?name=csb-server-api
+      title: Microcks
+    - url: https://microcks-microcks.apps.developer-hub.fuse.integration-qe.com/rest/ratings/v1
+      title: Mock
+      icon: web
+spec:
+  type: openapi
+  system: system:default/smongiar
+  owner: "group:default/backstage-admins"
+  lifecycle: production
+  definition:
+    $openapi: https://github.com/contract-first-idp/smongiar-csb-server-api-api/blob/main/specification.yaml
