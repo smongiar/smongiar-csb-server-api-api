@@ -21,4 +21,4 @@ spec:
   owner: "group:default/backstage-admins"
   lifecycle: production
   definition:
-    $openapi: https://github.com/contract-first-idp/smongiar-csb-server-api-api/blob/main/specification.yaml
+    $openapi: https://github.com/smongiar/smongiar-csb-server-api-api/blob/main/specification.yaml
